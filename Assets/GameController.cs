@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour
     public GameObject cube7;
     public GameObject cube8;
 
+    private int turnCounter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,51 +26,61 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Getting User Input
-        //1st Row
+        //Getting User Input//
+        //1st Row//
         if(Input.GetKeyDown(KeyCode.Q))
         {
-
+            //Check turnCounter for Odd number//
+            if(turnCounter % 2 == 1)
+            {
+                print("Player 1 Turn");
+            }
+            else
+            {
+                print("Player 2 Turn");
+            }
+            //increase the turn counter//
+            turnCounter++;
         }
 
         else if (Input.GetKeyDown(KeyCode.W))
         {
-
+            turnCounter++;
         }
 
         else if (Input.GetKeyDown(KeyCode.E))
         {
-
+            turnCounter++;
         }
-        //2nd Row
+        //2nd Row//
         if (Input.GetKeyDown(KeyCode.A))
         {
-
+            turnCounter++;
         }
 
         else if (Input.GetKeyDown(KeyCode.S))
         {
-
+            turnCounter++;
         }
 
         else if (Input.GetKeyDown(KeyCode.D))
         {
-
+            turnCounter++;
         }
-        //3rd Row
+        //3rd Row//
         if (Input.GetKeyDown(KeyCode.Z))
         {
-
+            turnCounter++;
         }
 
         else if (Input.GetKeyDown(KeyCode.X))
         {
-
+            turnCounter++;
         }
 
         else if (Input.GetKeyDown(KeyCode.C))
         {
-
+            turnCounter++;
         }
     }
 }
