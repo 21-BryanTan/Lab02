@@ -20,69 +20,217 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        cube0.GetComponent<MeshRenderer>().material.color = Color.white;
+        cube1.GetComponent<MeshRenderer>().material.color = Color.white;
+        cube2.GetComponent<MeshRenderer>().material.color = Color.white;
+        cube3.GetComponent<MeshRenderer>().material.color = Color.white;
+        cube4.GetComponent<MeshRenderer>().material.color = Color.white;
+        cube5.GetComponent<MeshRenderer>().material.color = Color.white;
+        cube6.GetComponent<MeshRenderer>().material.color = Color.white;
+        cube7.GetComponent<MeshRenderer>().material.color = Color.white;
+        cube8.GetComponent<MeshRenderer>().material.color = Color.white;
     }
 
     // Update is called once per frame
     void Update()
     {
         //Getting User Input//
+
         //1st Row//
         if(Input.GetKeyDown(KeyCode.Q))
         {
-            //Check turnCounter for Even number//
-            if(turnCounter % 2 == 0)
+            //Check if Cube is White Color//
+            if (cube0.GetComponent<MeshRenderer>().material.color == Color.white)
             {
-                print("Player 1 Turn");
-                cube0.GetComponent<MeshRenderer>().material.color = Color.red;
-            }
-            else
-            {
-                print("Player 2 Turn");
-                cube0.GetComponent<MeshRenderer>().material.color = Color.green;
-            }
-            //increase the turn counter//
-            turnCounter++;
+                //Check turnCounter for Even number//
+                if (turnCounter % 2 == 0)
+                {
+                    print("Player 1 Turn");
+                    cube0.GetComponent<MeshRenderer>().material.color = Color.red;
+                }
+                else
+                {
+                    print("Player 2 Turn");
+                    cube0.GetComponent<MeshRenderer>().material.color = Color.green;
+                }
+                //increase the turn counter//
+                turnCounter++;
+            }  
         }
 
         else if (Input.GetKeyDown(KeyCode.W))
         {
-            turnCounter++;
+            //Check if Cube is White Color//
+            if (cube1.GetComponent<MeshRenderer>().material.color == Color.white)
+            {
+                //Check turnCounter for Even number//
+                if (turnCounter % 2 == 0)
+                {
+                    print("Player 1 Turn");
+                    cube1.GetComponent<MeshRenderer>().material.color = Color.red;
+                }
+                else
+                {
+                    print("Player 2 Turn");
+                    cube1.GetComponent<MeshRenderer>().material.color = Color.green;
+                }
+                //increase the turn counter//
+                turnCounter++;
+            }
         }
 
         else if (Input.GetKeyDown(KeyCode.E))
         {
-            turnCounter++;
+
+            //Check if Cube is White Color//
+            if (cube2.GetComponent<MeshRenderer>().material.color == Color.white)
+            {
+                //Check turnCounter for Even number//
+                if (turnCounter % 2 == 0)
+                {
+                    print("Player 1 Turn");
+                    cube2.GetComponent<MeshRenderer>().material.color = Color.red;
+                }
+                else
+                {
+                    print("Player 2 Turn");
+                    cube2.GetComponent<MeshRenderer>().material.color = Color.green;
+                }
+                //increase the turn counter//
+                turnCounter++;
+            } 
         }
         //2nd Row//
         if (Input.GetKeyDown(KeyCode.A))
         {
-            turnCounter++;
+
+            //Check if Cube is White Color//
+            if (cube3.GetComponent<MeshRenderer>().material.color == Color.white)
+            {
+                //Check turnCounter for Even number//
+                if (turnCounter % 2 == 0)
+                {
+                    print("Player 1 Turn");
+                    cube3.GetComponent<MeshRenderer>().material.color = Color.red;
+                }
+                else
+                {
+                    print("Player 2 Turn");
+                    cube3.GetComponent<MeshRenderer>().material.color = Color.green;
+                }
+                //increase the turn counter//
+                turnCounter++;
+            }  
         }
 
         else if (Input.GetKeyDown(KeyCode.S))
         {
-            turnCounter++;
+
+            //Check if Cube is White Color//
+            if (cube4.GetComponent<MeshRenderer>().material.color == Color.white)
+            {
+                //Check turnCounter for Even number//
+                if (turnCounter % 2 == 0)
+                {
+                    print("Player 1 Turn");
+                    cube4.GetComponent<MeshRenderer>().material.color = Color.red;
+                }
+                else
+                {
+                    print("Player 2 Turn");
+                    cube4.GetComponent<MeshRenderer>().material.color = Color.green;
+                }
+                //increase the turn counter//
+                turnCounter++;
+            }          
         }
 
         else if (Input.GetKeyDown(KeyCode.D))
         {
-            turnCounter++;
+
+            //Check if Cube is White Color//
+            if (cube5.GetComponent<MeshRenderer>().material.color == Color.white)
+            {
+                //Check turnCounter for Even number//
+                if (turnCounter % 2 == 0)
+                {
+                    print("Player 1 Turn");
+                    cube5.GetComponent<MeshRenderer>().material.color = Color.red;
+                }
+                else
+                {
+                    print("Player 2 Turn");
+                    cube5.GetComponent<MeshRenderer>().material.color = Color.green;
+                }
+                //increase the turn counter//
+                turnCounter++;
+            }
         }
         //3rd Row//
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            turnCounter++;
+
+            //Check if Cube is White Color//
+            if (cube6.GetComponent<MeshRenderer>().material.color == Color.white)
+            {
+                //Check turnCounter for Even number//
+                if (turnCounter % 2 == 0)
+                {
+                    print("Player 1 Turn");
+                    cube6.GetComponent<MeshRenderer>().material.color = Color.red;
+                }
+                else
+                {
+                    print("Player 2 Turn");
+                    cube6.GetComponent<MeshRenderer>().material.color = Color.green;
+                }
+                //increase the turn counter//
+                turnCounter++;
+            }    
         }
 
         else if (Input.GetKeyDown(KeyCode.X))
         {
-            turnCounter++;
+
+            //Check if Cube is White Color//
+            if (cube7.GetComponent<MeshRenderer>().material.color == Color.white)
+            {
+                //Check turnCounter for Even number//
+                if (turnCounter % 2 == 0)
+                {
+                    print("Player 1 Turn");
+                    cube7.GetComponent<MeshRenderer>().material.color = Color.red;
+                }
+                else
+                {
+                    print("Player 2 Turn");
+                    cube7.GetComponent<MeshRenderer>().material.color = Color.green;
+                }
+                //increase the turn counter//
+                turnCounter++;
+            } 
         }
 
         else if (Input.GetKeyDown(KeyCode.C))
         {
-            turnCounter++;
+
+            //Check if Cube is White Color//
+            if (cube8.GetComponent<MeshRenderer>().material.color == Color.white)
+            {
+                //Check turnCounter for Even number//
+                if (turnCounter % 2 == 0)
+                {
+                    print("Player 1 Turn");
+                    cube8.GetComponent<MeshRenderer>().material.color = Color.red;
+                }
+                else
+                {
+                    print("Player 2 Turn");
+                    cube8.GetComponent<MeshRenderer>().material.color = Color.green;
+                }
+                //increase the turn counter//
+                turnCounter++;
+            } 
         }
     }
 }
