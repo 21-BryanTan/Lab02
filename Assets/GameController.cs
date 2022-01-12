@@ -233,4 +233,60 @@ public class GameController : MonoBehaviour
             } 
         }
     }
+
+    private void checkRedWinCondition()
+    {
+        //Horizontal Win Condition//
+        if(cube0.GetComponent<MeshRenderer>().material.color == Color.red &&
+           cube1.GetComponent<MeshRenderer>().material.color == Color.red &&
+           cube2.GetComponent<MeshRenderer>().material.color == Color.red)
+        {
+            print("Red Player Wins the Game!");
+        }
+        else if(cube3.GetComponent<MeshRenderer>().material.color == Color.red &&
+                cube4.GetComponent<MeshRenderer>().material.color == Color.red &&
+                cube5.GetComponent<MeshRenderer>().material.color == Color.red)
+        {
+            print("Red Player Wins the Game!");
+        }
+        else if (cube6.GetComponent<MeshRenderer>().material.color == Color.red &&
+                 cube7.GetComponent<MeshRenderer>().material.color == Color.red &&
+                 cube8.GetComponent<MeshRenderer>().material.color == Color.red)
+        {
+            print("Red Player Wins the Game!");
+        }
+        //Vertical Win Condition//
+        if (cube0.GetComponent<MeshRenderer>().material.color == Color.red &&
+           cube3.GetComponent<MeshRenderer>().material.color == Color.red &&
+           cube6.GetComponent<MeshRenderer>().material.color == Color.red)
+        {
+            print("Red Player Wins the Game!");
+        }
+        else if (cube1.GetComponent<MeshRenderer>().material.color == Color.red &&
+                cube4.GetComponent<MeshRenderer>().material.color == Color.red &&
+                cube7.GetComponent<MeshRenderer>().material.color == Color.red)
+        {
+            print("Red Player Wins the Game!");
+        }
+        else if (cube2.GetComponent<MeshRenderer>().material.color == Color.red &&
+                 cube5.GetComponent<MeshRenderer>().material.color == Color.red &&
+                 cube8.GetComponent<MeshRenderer>().material.color == Color.red)
+        {
+            print("Red Player Wins the Game!");
+        }
+        //Diagonal Win Condition//
+        if (cube0.GetComponent<MeshRenderer>().material.color == Color.red &&
+           cube4.GetComponent<MeshRenderer>().material.color == Color.red &&
+           cube8.GetComponent<MeshRenderer>().material.color == Color.red)
+        {
+            print("Red Player Wins the Game!");
+        }
+        else if (cube2.GetComponent<MeshRenderer>().material.color == Color.red &&
+                cube4.GetComponent<MeshRenderer>().material.color == Color.red &&
+                cube6.GetComponent<MeshRenderer>().material.color == Color.red)
+        {
+            print("Red Player Wins the Game!");
+        }
+    }
+
 }
