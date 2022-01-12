@@ -55,6 +55,9 @@ public class GameController : MonoBehaviour
                 }
                 //increase the turn counter//
                 turnCounter++;
+
+                //Check for Win//
+                CheckRedWinCondition();
             }  
         }
 
@@ -76,6 +79,9 @@ public class GameController : MonoBehaviour
                 }
                 //increase the turn counter//
                 turnCounter++;
+
+                //Check for Win//
+                CheckRedWinCondition();
             }
         }
 
@@ -98,6 +104,9 @@ public class GameController : MonoBehaviour
                 }
                 //increase the turn counter//
                 turnCounter++;
+
+                //Check for Win//
+                CheckRedWinCondition();
             } 
         }
         //2nd Row//
@@ -120,6 +129,9 @@ public class GameController : MonoBehaviour
                 }
                 //increase the turn counter//
                 turnCounter++;
+
+                //Check for Win//
+                CheckRedWinCondition();
             }  
         }
 
@@ -142,6 +154,9 @@ public class GameController : MonoBehaviour
                 }
                 //increase the turn counter//
                 turnCounter++;
+
+                //Check for Win//
+                CheckRedWinCondition();
             }          
         }
 
@@ -164,6 +179,9 @@ public class GameController : MonoBehaviour
                 }
                 //increase the turn counter//
                 turnCounter++;
+
+                //Check for Win//
+                CheckRedWinCondition();
             }
         }
         //3rd Row//
@@ -186,6 +204,9 @@ public class GameController : MonoBehaviour
                 }
                 //increase the turn counter//
                 turnCounter++;
+
+                //Check for Win//
+                CheckRedWinCondition();
             }    
         }
 
@@ -208,6 +229,9 @@ public class GameController : MonoBehaviour
                 }
                 //increase the turn counter//
                 turnCounter++;
+
+                //Check for Win//
+                CheckRedWinCondition();
             } 
         }
 
@@ -230,11 +254,14 @@ public class GameController : MonoBehaviour
                 }
                 //increase the turn counter//
                 turnCounter++;
+
+                //Check for Win//
+                CheckRedWinCondition();
             } 
         }
     }
 
-    private void checkRedWinCondition()
+    private void CheckRedWinCondition()
     {
         //Horizontal Win Condition//
         if(cube0.GetComponent<MeshRenderer>().material.color == Color.red &&
