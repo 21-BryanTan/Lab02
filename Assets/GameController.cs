@@ -58,6 +58,7 @@ public class GameController : MonoBehaviour
 
                 //Check for Win//
                 CheckRedWinCondition();
+                CheckGreenWinCondition();
             }  
         }
 
@@ -82,6 +83,7 @@ public class GameController : MonoBehaviour
 
                 //Check for Win//
                 CheckRedWinCondition();
+                CheckGreenWinCondition();
             }
         }
 
@@ -107,6 +109,7 @@ public class GameController : MonoBehaviour
 
                 //Check for Win//
                 CheckRedWinCondition();
+                CheckGreenWinCondition();
             } 
         }
         //2nd Row//
@@ -132,6 +135,7 @@ public class GameController : MonoBehaviour
 
                 //Check for Win//
                 CheckRedWinCondition();
+                CheckGreenWinCondition();
             }  
         }
 
@@ -157,6 +161,7 @@ public class GameController : MonoBehaviour
 
                 //Check for Win//
                 CheckRedWinCondition();
+                CheckGreenWinCondition();
             }          
         }
 
@@ -182,6 +187,7 @@ public class GameController : MonoBehaviour
 
                 //Check for Win//
                 CheckRedWinCondition();
+                CheckGreenWinCondition();
             }
         }
         //3rd Row//
@@ -207,6 +213,7 @@ public class GameController : MonoBehaviour
 
                 //Check for Win//
                 CheckRedWinCondition();
+                CheckGreenWinCondition();
             }    
         }
 
@@ -232,6 +239,7 @@ public class GameController : MonoBehaviour
 
                 //Check for Win//
                 CheckRedWinCondition();
+                CheckGreenWinCondition();
             } 
         }
 
@@ -257,6 +265,7 @@ public class GameController : MonoBehaviour
 
                 //Check for Win//
                 CheckRedWinCondition();
+                CheckGreenWinCondition();
             } 
         }
     }
@@ -316,4 +325,59 @@ public class GameController : MonoBehaviour
         }
     }
 
+
+    private void CheckGreenWinCondition()
+    {
+        //Horizontal Win Condition//
+        if (cube0.GetComponent<MeshRenderer>().material.color == Color.green &&
+           cube1.GetComponent<MeshRenderer>().material.color == Color.green &&
+           cube2.GetComponent<MeshRenderer>().material.color == Color.green)
+        {
+            print("Green Player Wins the Game!");
+        }
+        else if (cube3.GetComponent<MeshRenderer>().material.color == Color.green &&
+                cube4.GetComponent<MeshRenderer>().material.color == Color.green &&
+                cube5.GetComponent<MeshRenderer>().material.color == Color.green)
+        {
+            print("Green Player Wins the Game!");
+        }
+        else if (cube6.GetComponent<MeshRenderer>().material.color == Color.green &&
+                 cube7.GetComponent<MeshRenderer>().material.color == Color.green &&
+                 cube8.GetComponent<MeshRenderer>().material.color == Color.green)
+        {
+            print("Green Player Wins the Game!");
+        }
+        //Vertical Win Condition//
+        if (cube0.GetComponent<MeshRenderer>().material.color == Color.green &&
+           cube3.GetComponent<MeshRenderer>().material.color == Color.green &&
+           cube6.GetComponent<MeshRenderer>().material.color == Color.green)
+        {
+            print("Green Player Wins the Game!");
+        }
+        else if (cube1.GetComponent<MeshRenderer>().material.color == Color.green &&
+                cube4.GetComponent<MeshRenderer>().material.color == Color.green &&
+                cube7.GetComponent<MeshRenderer>().material.color == Color.green)
+        {
+            print("Green Player Wins the Game!");
+        }
+        else if (cube2.GetComponent<MeshRenderer>().material.color == Color.green &&
+                 cube5.GetComponent<MeshRenderer>().material.color == Color.green &&
+                 cube8.GetComponent<MeshRenderer>().material.color == Color.green)
+        {
+            print("Green Player Wins the Game!");
+        }
+        //Diagonal Win Condition//
+        if (cube0.GetComponent<MeshRenderer>().material.color == Color.green &&
+           cube4.GetComponent<MeshRenderer>().material.color == Color.green &&
+           cube8.GetComponent<MeshRenderer>().material.color == Color.green)
+        {
+            print("Green Player Wins the Game!");
+        }
+        else if (cube2.GetComponent<MeshRenderer>().material.color == Color.green &&
+                cube4.GetComponent<MeshRenderer>().material.color == Color.green &&
+                cube6.GetComponent<MeshRenderer>().material.color == Color.green)
+        {
+            print("Green Player Wins the Game!");
+        }
+    }
 }
