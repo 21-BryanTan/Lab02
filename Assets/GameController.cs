@@ -30,14 +30,16 @@ public class GameController : MonoBehaviour
         //1st Row//
         if(Input.GetKeyDown(KeyCode.Q))
         {
-            //Check turnCounter for Odd number//
-            if(turnCounter % 2 == 1)
+            //Check turnCounter for Even number//
+            if(turnCounter % 2 == 0)
             {
                 print("Player 1 Turn");
+                cube0.GetComponent<MeshRenderer>().material.color = Color.red;
             }
             else
             {
                 print("Player 2 Turn");
+                cube0.GetComponent<MeshRenderer>().material.color = Color.green;
             }
             //increase the turn counter//
             turnCounter++;
